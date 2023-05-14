@@ -1,8 +1,8 @@
 *** Settings ***
 Documentation       A library with common keywords for web testing.
 
+Resource            ../Resources/Locators.robot
 Library             SeleniumLibrary
-Library             Collections
 
 
 *** Variables ***
@@ -17,3 +17,11 @@ Initiate browser
 
 Shutdown browser
     Close All Browsers
+
+Access the homepage from Amazon.com.br
+    Go To    ${URL}
+    Wait Until Element Is Visible    ${HEADER_PRIME}    10s    error=Header "Prime" not displayed
+
+Verify if page title is "${TITLE}"
+    Wait Until Page Contains    ${TITLE}    10s    error=Page does not contain "${TITLE}"
+    Title Should Be    ${TITLE}    error=Page title is not "${TITLE}"
