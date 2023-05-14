@@ -1,6 +1,9 @@
 # Test-Automation-Robot
 My intention with this project is to practice Robot Framework test automation/ scripting. 
+
+
 SiteGenesis folder tests a fake Salesforce e-commerce website.
+
 Amazon folder tests the amazon.com.br website.
 
 You can find tests that:
