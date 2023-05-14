@@ -1,14 +1,20 @@
 # Test-Automation-Robot
-My intention with this project is to practice Robot Framework test automation/ scripting. It tests a fake Salesforce e-commerce website.
+My intention with this project is to practice Robot Framework test automation/ scripting. 
+SiteGenesis folder tests a fake Salesforce e-commerce website.
+Amazon folder tests the amazon.com.br website.
 
 You can find tests that:
 - Use Selenium Library;
 - Map elements with CSS selector;
+- Map elements with XPATH selector;
 - Use arguments;
+- Use documentations;
 - Use page objects;
 - Use conditionals;
 - Use dictionaries;
 - Assert information;
+- Tests written in procedural way;
+- Tests written in Gherkin way;
 - Search products;
 - Interact with product listing pages;
 - Interact with product details page;
