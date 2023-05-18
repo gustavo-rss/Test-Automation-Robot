@@ -55,3 +55,10 @@ TC 04 - Remove product from cart
     Verify if the product "Breath Of The Wild" was added to cart
     Remove product "Breath Of The Wild" from cart
     Verify if the product "Breath Of The Wild" was removed from cart
+
+TC 05 - Verify payment methods page
+    [Documentation]    This test verifies all header categories
+    [Tags]    footer    payment_methods
+    Access the homepage from Amazon.com.br
+    Click on footer payment methods
+    Verify accepted payment methods
