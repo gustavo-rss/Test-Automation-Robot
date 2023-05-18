@@ -7,6 +7,7 @@ Resource            ../Keywords/PrimeCategory.robot
 Resource            ../Keywords/ProductResults.robot
 Resource            ../Keywords/ProductPage.robot
 Resource            ../Keywords/Cart.robot
+Resource            ../Keywords/Footer.robot
 
 Test Setup          Initiate browser
 Test Teardown       Shutdown browser
