@@ -7,6 +7,7 @@ Resource            ../Keywords/PrimeCategory.robot
 Resource            ../Keywords/ProductResults.robot
 Resource            ../Keywords/ProductPage.robot
 Resource            ../Keywords/Cart.robot
+Resource            ../Keywords/Footer.robot
 
 Test Setup          Initiate browser
 Test Teardown       Shutdown browser
@@ -56,3 +57,10 @@ TC 04 - Remove product from cart
     And verify if the product "Breath Of The Wild" was added to cart
     And remove product "Breath Of The Wild" from cart
     Then verify if the product "Breath Of The Wild" was removed from cart
+
+TC 05 - Verify payment methods page
+    [Documentation]    This test verifies all header categories
+    [Tags]    footer    payment_methods
+    Given Access the homepage from Amazon.com.br
+    When Click on footer payment methods
+    Then Verify accepted payment methods

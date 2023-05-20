@@ -13,3 +13,7 @@ ${ADD_TO_CART}              css=#add-to-cart-button
 
 #Payment methods page locators
 ${ACCEPTED_CREDIT_CARD}     xpath=//h2[contains(.,'Crédito')]
+${ACCEPTED_BOLETO}          xpath=//h2[contains(.,'Boleto')]
+${ACCEPTED_PIX}             xpath=//h2[contains(.,'Pix')]
+${ACCEPTED_DEBIT_CARD}      xpath=//h2[contains(.,'Débito')]
+${ACCEPTED_LIVELO}          xpath=//h2[contains(.,'Livelo')]
