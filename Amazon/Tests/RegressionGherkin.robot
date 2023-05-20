@@ -17,7 +17,7 @@ Test Teardown       Shutdown browser
 TC 01 - Access the "Prime" header category
     [Documentation]    This test verifies the "Prime" header category from Amazon.com.br nd verifies the benefits "Ler" and "Música".
     [Tags]    categories    gherkin
-    Given access the homepage from Amazon.com.br
+    Given Log    User is on Amazon.com.br home page
     Then verify if page title is "Amazon.com.br | Tudo pra você, de A a Z."
     When Access the header category "Prime"
     Then verify if page title is "Amazon.com.br: Amazon Prime"
@@ -27,7 +27,7 @@ TC 01 - Access the "Prime" header category
 TC 02 - Search for a product
     [Documentation]    This test verifies the search for a product and verifies the product page.
     [Tags]    product_search    product_list    gherkin
-    Given access the homepage from Amazon.com.br
+    Given Log    User is on Amazon.com.br home page
     Then verify if page title is "Amazon.com.br | Tudo pra você, de A a Z."
     When type in the search field "Kindle"
     And click on search button
@@ -37,7 +37,7 @@ TC 02 - Search for a product
 TC 03 - Add product to cart
     [Documentation]    This test searches for a product, opens its page, adds to cart and goes to cart page.
     [Tags]    cart
-    Given access the homepage from Amazon.com.br
+    Given Log    User is on Amazon.com.br home page
     When type in the search field "Breath Of The Wild"
     And click on search button
     Then verify if the product results contains "Breath Of The Wild"
@@ -48,7 +48,7 @@ TC 03 - Add product to cart
 TC 04 - Remove product from cart
     [Documentation]    This test searches for a product, opens its page, adds to cart, goes to cart page and removes the product.
     [Tags]    cart
-    Given access the homepage from Amazon.com.br
+    Given Log    User is on Amazon.com.br home page
     When type in the search field "Breath Of The Wild"
     And click on search button
     Then verify if the product results contains "Breath Of The Wild"
@@ -59,8 +59,15 @@ TC 04 - Remove product from cart
     Then verify if the product "Breath Of The Wild" was removed from cart
 
 TC 05 - Verify payment methods page
-    [Documentation]    This test verifies all header categories
+    [Documentation]    This test verifies all accepted payment methods
     [Tags]    footer    payment_methods
-    Given Access the homepage from Amazon.com.br
+    Given Log    User is on Amazon.com.br home page
     When Click on footer payment methods
     Then Verify accepted payment methods
+
+TC 06 - Verify and interact with footer elements
+    [Documentation]    This test verifies all footer elements
+    [Tags]    footer
+    Given Log    User is on Amazon.com.br home page
+    When Scroll to footer
+    Then Verify all footer elements

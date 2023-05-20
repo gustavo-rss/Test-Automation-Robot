@@ -17,7 +17,6 @@ Test Teardown       Shutdown browser
 TC 01 - Access the "Prime" header category
     [Documentation]    This test verifies the "Prime" header category from Amazon.com.br nd verifies the benefits "Ler" and "Música".
     [Tags]    categories
-    Access the homepage from Amazon.com.br
     Verify if page title is "Amazon.com.br | Tudo pra você, de A a Z."
     Access the header category "Prime"
     Verify if page title is "Amazon.com.br: Amazon Prime"
@@ -27,7 +26,6 @@ TC 01 - Access the "Prime" header category
 TC 02 - Search for a product
     [Documentation]    This test verifies the search for a product and verifies the product page.
     [Tags]    product_search    product_results
-    Access the homepage from Amazon.com.br
     Type in the search field "Kindle"
     Click on search button
     Verify if page title is "Amazon.com.br : Kindle"
@@ -36,7 +34,6 @@ TC 02 - Search for a product
 TC 03 - Add product to cart
     [Documentation]    This test searches for a product, opens its page, adds to cart and goes to cart page.
     [Tags]    cart
-    Access the homepage from Amazon.com.br
     Type in the search field "Breath Of The Wild"
     Click on search button
     Verify if the product results contains "Breath Of The Wild"
@@ -47,7 +44,6 @@ TC 03 - Add product to cart
 TC 04 - Remove product from cart
     [Documentation]    This test searches for a product, opens its page, adds to cart, goes to cart page and removes the product.
     [Tags]    cart
-    Access the homepage from Amazon.com.br
     Type in the search field "Breath Of The Wild"
     Click on search button
     Verify if the product results contains "Breath Of The Wild"
@@ -58,8 +54,14 @@ TC 04 - Remove product from cart
     Verify if the product "Breath Of The Wild" was removed from cart
 
 TC 05 - Verify payment methods page
-    [Documentation]    This test verifies all header categories
+    [Documentation]    This test verifies all accepted payment methods
     [Tags]    footer    payment_methods
-    Access the homepage from Amazon.com.br
     Click on footer payment methods
     Verify accepted payment methods
+
+TC 06 - Verify and interact with footer elements
+    [Documentation]    This test verifies all footer elements
+    [Tags]    footer
+    Scroll to footer
+    Verify all footer elements
+

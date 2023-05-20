@@ -14,6 +14,7 @@ ${BROWSER}      chrome
 Initiate browser
     Open Browser    ${URL}    ${BROWSER}
     Maximize Browser Window
+    Access the homepage from Amazon.com.br
 
 Shutdown browser
     Close All Browsers

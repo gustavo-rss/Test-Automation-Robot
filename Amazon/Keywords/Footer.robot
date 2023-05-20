@@ -30,3 +30,27 @@ Verify accepted payment methods
     Scroll Element Into View    ${ACCEPTED_LIVELO}
     Wait Until Element Is Visible    ${ACCEPTED_LIVELO}    10s    error=Pix card is not visible
     Should Contain    ${ACCEPTED_LIVELO}    Livelo
+
+Scroll to footer
+    Scroll Element Into View    ${FOOTER_LOGO}
+
+Verify all footer elements
+    Verify get to know us footer section
+    Verify footer logo
+
+Verify get to know us footer section
+    Wait Until Element Is Visible    ${FOOTER_CORPORATE_INFO}    10s    error=Corporate footer section is not visible
+    Wait Until Element Is Visible    ${FOOTER_JOBS}    10s    error=Jobs footer section is not visible
+    Wait Until Element Is Visible
+    ...    ${FOOTER_PRESS_RELEASE}
+    ...    10s
+    ...    error=Press release footer section is not visible
+    Wait Until Element Is Visible    ${FOOTER_COMMUNITY}    10s    error=Community footer section is not visible
+    Wait Until Element Is Visible
+    ...    ${FOOTER_ACCESSIBILITY}
+    ...    10s
+    ...    error=Accessibility footer section is not visible
+    Wait Until Element Is Visible    ${FOOTER_SCIENCE}    10s    error=Science footer section is not visible
+
+Verify footer logo
+    Wait Until Element Is Visible    ${FOOTER_LOGO}    10s    error=Footer logo is not visible
