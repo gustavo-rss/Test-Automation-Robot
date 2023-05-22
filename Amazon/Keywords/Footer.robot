@@ -100,3 +100,7 @@ Verify let us help you footer section
 
 Verify footer logo
     Wait Until Element Is Visible    ${FOOTER_LOGO}    10s    error=Footer logo is not visible
+
+Click on footer help
+    Click Element    ${FOOTER_HELP}
+    Wait Until Location Contains    help    10s    error=Help page is not loaded

@@ -36,3 +36,7 @@ ${ACCEPTED_BOLETO}                  xpath=//h2[contains(.,'Boleto')]
 ${ACCEPTED_PIX}                     xpath=//h2[contains(.,'Pix')]
 ${ACCEPTED_DEBIT_CARD}              xpath=//h2[contains(.,'Débito')]
 ${ACCEPTED_LIVELO}                  xpath=//h2[contains(.,'Livelo')]
+
+#Help page locators
+${FIND_MORE_SOLUTIONS}              css=.a-search input
+${MORE_SOLUTIONS_RESULTS}           css=#search-help p b

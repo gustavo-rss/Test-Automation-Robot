@@ -8,6 +8,7 @@ Resource            ../Keywords/ProductResults.robot
 Resource            ../Keywords/ProductPage.robot
 Resource            ../Keywords/Cart.robot
 Resource            ../Keywords/Footer.robot
+Resource    ../Keywords/Help.robot
 
 Test Setup          Initiate browser
 Test Teardown       Shutdown browser
@@ -66,8 +67,17 @@ TC 05 - Verify payment methods page
     Then Verify accepted payment methods
 
 TC 06 - Verify and interact with footer elements
-    [Documentation]    This test verifies all footer elements
+    [Documentation]    This test verifies  footer elements
     [Tags]    footer
     Given Log    User is on Amazon.com.br home page
     When Scroll to footer
     Then Verify all footer elements
+    Then Click on footer help
+
+TC 07 - Search more solutions on help page
+    [Documentation]    This test navigates and searches for a new solution on help page
+    [Tags]    help
+    Given Log    User is on Amazon.com.br home page
+    When Scroll to footer
+    And Click on footer help
+    Then Search for a new solution    Kindle
