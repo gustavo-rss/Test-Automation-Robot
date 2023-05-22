@@ -26,3 +26,4 @@ You can find tests that:
 - Place an invalid order with Credit Card;
 - Place a valid order with Paypal;
 - Navigate to different website pages and asserts that the product price is consistent.
+- API testing using RequestsLibrary
