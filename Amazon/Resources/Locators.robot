@@ -4,6 +4,12 @@ ${HEADER_PRIME}                     css=#nav-link-amazonprime
 ${SEARCH_BAR}                       css=#twotabsearchtextbox
 ${SEARCH_BUTTON}                    css=#nav-search-submit-button
 ${HEADER_CART}                      css=#nav-cart
+${HEADER_ACC_LIST}                  css=#nav-link-accountList
+${HEADER_LOGIN}                     css=#nav-flyout-ya-signin
+${HEADER_YOUR_ACC}                  css=#nav-al-your-account
+${HEADER_WISHLIST}                  css=#nav-al-wishlist a
+${HEADER_YOUR_ORDERS}               css=#nav_prefetch_yourorders
+${HEADER_YOUR_ORDERS}               css=#nav_prefetch_yourorders
 
 #Footer locators
 ${FOOTER_PAYMENT_METHODS}           css=.nav_first [href*='footer_pay_tc']
