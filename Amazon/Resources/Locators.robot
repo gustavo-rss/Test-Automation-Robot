@@ -46,3 +46,6 @@ ${ACCEPTED_LIVELO}                  xpath=//h2[contains(.,'Livelo')]
 #Help page locators
 ${FIND_MORE_SOLUTIONS}              css=.a-search input
 ${MORE_SOLUTIONS_RESULTS}           css=#search-help p b
+
+#Login page
+${LOGIN_CONTINUE}                   css=input#continue

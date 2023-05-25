@@ -73,3 +73,8 @@ TC 07 - Search more solutions on help page
     Scroll to footer
     Click on footer help
     Search for a new solution    Kindle
+
+TC 08 - Login from header
+    [Documentation]    This test navigates and perform login from header
+    [Tags]    login    header
+    Click on login from header
