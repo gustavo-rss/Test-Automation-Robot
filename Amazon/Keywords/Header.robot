@@ -21,4 +21,9 @@ Click on login from header
     Wait Until Element Is Visible    ${HEADER_LOGIN}
     Click Element    ${HEADER_LOGIN}
     Wait Until Element Is Visible    ${LOGIN_CONTINUE}    10s    error=Login continue button not displayed
-    
+
+Verify login error messages
+    Click Element    ${LOGIN_CONTINUE}
+    Wait Until Element Is Visible    ${LOGIN_MISSING_EMAIL_ERROR}     10s    error=Missing e-mail error message not displayed
+    ${error_text}    Get Text    ${LOGIN_MISSING_EMAIL_ERROR}
+    Element Text Should Be    ${error_text}    Digite seu e-mail ou número de telefone celular 

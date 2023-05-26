@@ -78,3 +78,4 @@ TC 08 - Login from header
     [Documentation]    This test navigates and perform login from header
     [Tags]    login    header
     Click on login from header
+    Verify login error messages
