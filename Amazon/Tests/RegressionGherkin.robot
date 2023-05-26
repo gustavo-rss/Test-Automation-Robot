@@ -81,3 +81,10 @@ TC 07 - Search more solutions on help page
     When Scroll to footer
     And Click on footer help
     Then Search for a new solution    Kindle
+
+TC 08 - Login from header
+    [Documentation]    This test navigates and perform login from header
+    [Tags]    login    header
+    Given Log    User is on Amazon.com.br home page
+    When Click on login from header
+    Then Verify login error messages
