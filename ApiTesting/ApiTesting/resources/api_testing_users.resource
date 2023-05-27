@@ -12,29 +12,28 @@ Create new user
     Log    ${TEST_EMAIL}
 
 Register user created at ServeRest
-    [Arguments]    ${email}    ${status_code_desejado}
+    [Arguments]    ${email}    ${desired_status_code}
     ${body}    Create Dictionary
-    ...    name=John Doe
+    ...    nome=John Doe
     ...    email=${email}
     ...    password=1234
     ...    administrador=true
     Log    ${body}
 
     Create session at ServeRest
-
-    ${resposnse}    POST On Session
+    ${response}    POST On Session
     ...    alias=ServeRest
     ...    url=/usuarios
     ...    json=${body}
-    ...    expected_status=${status_code_desejado}
+    ...    expected_status=${desired_status_code}
 
-    Log    ${resposnse.json()}
+    Log    ${response.json()}
 
     IF    ${response.status_code} == 201
-        Set Test Variable    ${USER_ID}    ${resposnse.json()["_id"]}
+        Set Test Variable    ${USER_ID}    ${response.json()["_id"]}
     END
 
-    Set Test Variable    ${RESPONSE}    ${resposnse.json()}
+    Set Test Variable    ${RESPONSE}    ${response.json()}
 
 Create session at ServeRest
     ${headers}    Create Dictionary    accept=application/json    Content-Type=application/json
@@ -46,7 +45,7 @@ Verify if user was registered correctly
     Dictionary Should Contain Key    ${RESPONSE}    _id
 
 Repeat user registration
-    Register user created at ServeRest    email=${TEST_EMAIL}    status_code_desejado=400
+    Register user created at ServeRest    email=${TEST_EMAIL}    desired_status_code=400
 
 Verify if API doesn't allow duplicate user registration
     Dictionary Should Contain Item    ${RESPONSE}    message    Este email já está sendo usado
