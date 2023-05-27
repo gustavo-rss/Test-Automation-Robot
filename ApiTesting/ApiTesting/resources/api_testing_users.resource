@@ -69,3 +69,23 @@ Check the returned data
     Dictionary Should Contain Item    ${CONSULT_RESP}    password    1234
     Dictionary Should Contain Item    ${CONSULT_RESP}    administrador    true
     Dictionary Should Contain Item    ${CONSULT_RESP}    _id    ${USER_ID}
+
+Perform user login
+    ${body}    Create Dictionary
+    ...    email=${TEST_EMAIL}
+    ...    password=1234
+    
+    Create session at ServeRest
+    ${response}    POST On Session
+    ...    alias=ServeRest
+    ...    url=/login
+    ...    json=${body}
+    ...    expected_status=200
+
+    Log    ${response.json()}
+
+    Set Test Variable    ${RESPONSE}    ${response.json()}
+
+Verify if login was successfull
+    Dictionary Should Contain Item    ${RESPONSE}    message    Login realizado com sucesso
+    Dictionary Should Contain Key    ${RESPONSE}    authorization

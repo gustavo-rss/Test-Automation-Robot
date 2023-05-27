@@ -19,3 +19,9 @@ TC 03: Consult data from a new user
     Register user created at ServeRest    email=${TEST_EMAIL}    desired_status_code=201
     Consult new user data
     Check the returned data
+
+TC 04: Login with a new user
+    Create new user
+    Register user created at ServeRest    email=${TEST_EMAIL}    desired_status_code=201
+    Perform user login
+    Verify if login was successfull
