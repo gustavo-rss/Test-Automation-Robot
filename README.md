@@ -6,6 +6,8 @@ SiteGenesis folder tests a fake Salesforce e-commerce website.
 
 Amazon folder tests the amazon.com.br website.
 
+ApiTesting folder tests a public API
+
 You can find tests that:
 - Use Selenium Library;
 - Map elements with CSS selector;
