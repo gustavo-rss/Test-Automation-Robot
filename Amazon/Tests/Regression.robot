@@ -9,6 +9,7 @@ Resource            ../Keywords/ProductPage.robot
 Resource            ../Keywords/Cart.robot
 Resource            ../Keywords/Footer.robot
 Resource            ../Keywords/Help.robot
+Resource            ../Keywords/Login.robot
 
 Test Setup          Initiate browser
 Test Teardown       Shutdown browser

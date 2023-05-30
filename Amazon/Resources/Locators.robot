@@ -50,3 +50,5 @@ ${MORE_SOLUTIONS_RESULTS}           css=#search-help p b
 #Login page
 ${LOGIN_CONTINUE}                   css=input#continue
 ${LOGIN_MISSING_EMAIL_ERROR}        css=#auth-email-missing-alert .a-alert-content
+${LOGIN_NOT_FOUND_EMAIL_ERROR}      css=#auth-error-message-box span
+${LOGIN_EMAIL}                      css=[id='ap_email']
