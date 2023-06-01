@@ -22,16 +22,16 @@ Verify login error messages
     ...    Sua senha está incorreta
 
 Input wrong login e-mail
-    Input Text    ${LOGIN_EMAIL}    aaa
+    Input Text    ${LOGIN_EMAIL}    ${WRONG_PASSWORD}
     Click Element    ${LOGIN_CONTINUE}
     Wait Until Element Is Visible    ${LOGIN_NOT_FOUND_EMAIL_ERROR}    10s    error=Email not found error not displayed
 
 Input correct login e-mail
-    Input Text    ${LOGIN_EMAIL}    test@gmail.com
+    Input Text    ${LOGIN_EMAIL}    ${VALID_EMAIL}
     Click Element    ${LOGIN_CONTINUE}
 
 Input wrong login password
     Input correct login e-mail
-    Input Text    ${LOGIN_PASSWORD}    aaa
+    Input Text    ${LOGIN_PASSWORD}    ${WRONG_PASSWORD}
     Click Element    ${LOGIN_SUBMIT}
     Wait Until Element Is Visible    ${LOGIN_WRONG_PASSWORD_ERROR}    10s    error=Wrong password error not displayed
