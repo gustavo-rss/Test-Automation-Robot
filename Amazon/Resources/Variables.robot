@@ -1,3 +1,4 @@
 *** Variables ***
-${VALID_EMAIL}          test@gmail.com
+${VALID_EMAIL}          gusteste42@gmail.com
 ${WRONG_PASSWORD}       aaa
+${CORRECT_PASSWORD}     RobotFramework123!
