@@ -77,6 +77,6 @@ TC 07 - Search more solutions on help page
 
 TC 08 - Login from header
     [Documentation]    This test navigates and perform login from header and verifies error messages
-    [Tags]    login    header
+    [Tags]    login    header    errors
     Click on login from header
     Verify login error messages
