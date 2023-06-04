@@ -75,7 +75,7 @@ TC 07 - Search more solutions on help page
     Click on footer help
     Search for a new solution    Kindle
 
-TC 08 - Login from header
+TC 08 - Verify login error messages
     [Documentation]    This test navigates and perform login from header and verifies error messages
     [Tags]    login    header    errors
     Click on login from header

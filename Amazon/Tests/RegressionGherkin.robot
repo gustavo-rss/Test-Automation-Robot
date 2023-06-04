@@ -83,7 +83,7 @@ TC 07 - Search more solutions on help page
     And Click on footer help
     Then Search for a new solution    Kindle
 
-TC 08 - Login from header
+TC 08 - Verify login error messages
     [Documentation]    This test navigates and perform login from header and verifies error messages
     [Tags]    login    header    errors
     Given Log    User is on Amazon.com.br home page
