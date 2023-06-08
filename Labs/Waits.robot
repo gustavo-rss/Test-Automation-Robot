@@ -8,7 +8,7 @@ Test Timeout    1 seconds
 Dealing with test timeout
     Simulates test waits    2s
 
-#### ESPERANDO UMA KEYWORD
+#### Waiting for a keyword
 Waiting test
     [Timeout]   2 minutes
     Waites until keyword succeeds
