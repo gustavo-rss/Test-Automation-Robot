@@ -51,7 +51,7 @@ This keyword will pass with a condition and stop executing bellow keywords
     Pass Execution If    ${STATUS}    message=Gustavo is equal Gustavo so it passes
 
 This keyword will pass
-    Should Be True    "Gustavo" == "Gus"
+    Should Be True    "Gustavo" == "Gustavo"
 
 This keyword will fail
     Should Be True    "Gustavo" == "Peter"
