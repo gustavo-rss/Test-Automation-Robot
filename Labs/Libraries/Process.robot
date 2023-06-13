@@ -8,6 +8,7 @@ TC01 - Opening a program
 
 *** Keywords ***
 Open and close the Notepad
+    # This path is for MacOS
     ${MY_PROCESS}     Start Process  chmod   /System/Applications/TextEdit.app
     Sleep  3s
     Terminate Process   ${MY_PROCESS}   kill=True
