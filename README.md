@@ -30,4 +30,5 @@ You can find tests that:
 - Navigate to different website pages and asserts that the product price is consistent;
 - API testing using RequestsLibrary;
 - OperatingSystem Library tests;
-- datetime Library tests.
+- datetime Library tests;
+- Database Library tests.
